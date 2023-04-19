@@ -1,5 +1,6 @@
 const inquirer = require("inquirer")
 const fs = require("fs")
+require('dotenv').config()
 
 inquirer.prompt([
   {
@@ -32,6 +33,7 @@ inquirer.prompt([
     <title>Document</title>
   </head>
   <body>
+    <h1>Name: ${process.env.API_KEY}</h1>
     <h1>Name: ${answers.name}</h1>
     <h3>From: ${answers.location}</h3>
     <h3>Color: ${answers.color}</h3>
