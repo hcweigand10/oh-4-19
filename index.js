@@ -2,6 +2,8 @@ const inquirer = require("inquirer")
 const fs = require("fs")
 require('dotenv').config()
 
+// console.log(process.env)
+
 inquirer.prompt([
   {
     type: "input",
